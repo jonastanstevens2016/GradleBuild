@@ -1,0 +1,13 @@
+apply plugin: 'application'
+
+mainClassName = 'mainpackage.Main'
+
+dependencies{
+    compile project(':web')
+}
+
+jar{
+    manifest{
+        attributes('Main-Class': 'mainpackage.Main')
+    }
+}
